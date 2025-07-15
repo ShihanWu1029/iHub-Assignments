@@ -1,0 +1,9 @@
+[project]
+name = "iHub-Assignments"
+version = "1.0"
+dependecies = [
+    "matplotlib==3.10.3",
+    "pandas==2.3.1",
+    "scikit-learn==1.7.0",
+    "numpy==2.3.1"
+]
