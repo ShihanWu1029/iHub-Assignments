@@ -23,7 +23,7 @@ y_pred = lin_reg.predict(X_test_poly)
 print("Prediction at x =",int(X_test[999][0]),end=' ')
 print("is y =",y_pred[999])
 
-# 绘制结果
+# Draw
 plt.scatter(X, y, color='blue', label='Data')
 plt.plot(X_test, y_pred, color='red', label='Polynomial Regression')
 plt.xlabel('x-axis')
