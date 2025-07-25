@@ -1,12 +1,12 @@
-from sklearn.datasets import load_wine
+from sklearn.datasets import load_iris
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 import matplotlib.pyplot as plt
 import numpy as np
 
-wine = load_wine()
-X = wine.data[:, :2]
+wine = load_iris()
+X = wine.data[:, 1:3]
 y = wine.target
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
